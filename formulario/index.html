@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Meu hobbie </title>
+<head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+
+
+    .header {
+      padding: 10px;
+      text-align: center;
+      background: white;
+    }
+
+    .header h1 {
+      font-size: 50px;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="C:\Users\User\Desktop\projetos\meu hobby" />
+  <div class="header">
+    <h1>Meu hobby</h1>
+    <p>Musculação</p>
+  </div>
+
+  <div class="topnav">
+    <a href="https://minutosaudavel.com.br/musculacao/">Para conhecer mais...</a>
+
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+
+        <h2> Vantagens da atividade fisica:</h2>
+        <center>
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM9GfAkCUBjNHPe3zZ8iyOcWtk8xY-_0ClkWy4yB6OWRU2_Xj>
+            <img
+            src=https://ld-wp.template-help.com/creative/sportlabs-sample/wp-content/uploads/2016/05/fitness_img_1.jpg>
+            <br>
+          <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNMVX5XixO_f_VcBftdEnGUkIaQUirkeVMWRKE0vN7jgWZPnm6>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjAtkbNN2DIOmBcIX2Jw79Ps3aU15demJBpUboQPKybo__YEpb>
+            <br>
+          <img
+            src=http://blogshopcama.com.br/wp-content/uploads/2015/01/Dormiu-mal-Veja-estas-8-dicas-para-aguentar-o-dia-no-trabalho-2.jpg width="500" height="500">
+            <img
+
+
+        </center>
+      </div>
+
+      <div class="card">
+        <h2>Por que praticar atividade fisica?</h2>
+        <p>Estimulação cardiovascular – quem se mantém ativo tem maior capacidade (respiratória) e, consequentemente, do coração, o que melhora a irrigação sanguínea do corpo. Isso ajuda a evitar as principais causas de mortalidade em brasileiros, como infartos, acidentes vasculares cerebrais, além de casos de demência;
+
+Articulações – com as articulações fortalecidas, posterga-se doenças comuns do envelhecimento, como as causadas por desgaste;
+
+Músculos – com a musculatura bem trabalhada, idosos sofrem menos instabilidade, reduzem as quedas e lesões graves como fraturas já que os ossos também beneficiam-se de atividades físicas;
+
+Pele – um corpo bem hidratado, com boa alimentação e ativo transparece uma pele mais saudável e bonita. <br>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="rightcolumn">
+      <div class="card">
+
+        <div class="fakeimg" style="height:200px;">"Já que viveremos mais, temos que preparar o nosso corpo para um envelhecimento saudável”</div>
+          <br>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+
+           $(document).ready(function(){
+
+            $('#meuFormulario').on('submit', function(e){
+                    e.preventDefault();
+                    var nome = $('#nome').val().length;
+                    var senha = $('#senha').val().length;
+                    if (nome > 0 && senha > 0) {
+                        localStorage.setItem("nome", $('#nome').val());
+                        localStorage.setItem("senha", $('#senha').val());
+                        this.submit();
+                    }else{
+                      alert("Você deve preencher o usuário e senha!")
+                    }
+                });
+
+            });
+
+          </script>
+          </head>
+          <body>
+
+            <h1>Formulário</h1>
+            <form id="meuFormulario" action="pagina2.html">
+            Seu Login:<br>
+            <input type="text" name="nome" value="" id="nome">
+            <br>
+            Sua senha:<br>
+            <input type="password" name="senha" value="" id="senha">
+            <br><br>
+            <br><br>
+            <input type="submit" value="Enviar">
+            </form>
+
+</body>
+
+</html>
